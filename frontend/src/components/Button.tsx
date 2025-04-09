@@ -12,9 +12,9 @@ export default function Button({ noHover, children, className, style, onClick }:
   return (
     <button style={style}
       onClick={onClick}
-      className={`${!noHover && "hover:bg-gray-800"} 
+      className={`${!noHover && "hover:bg-tertiary"} 
       p-2 duration-300 flex justify-center 
-      items-center h-10 rounded-full cursor-pointer
+      items-center rounded-full cursor-pointer
       ${className}`}>
       { children }
     </button>
